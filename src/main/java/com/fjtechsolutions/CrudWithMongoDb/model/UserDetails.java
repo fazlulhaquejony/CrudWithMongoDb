@@ -8,11 +8,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collation = "user_details")
+@Document(collection = "userDetails")
+//@Document(collation = "userDetails")
 public class UserDetails {
 
     private int id;
     private String userId;
+    private String password;
     private String sessionId;
     private Integer userRole;
     private boolean status;
